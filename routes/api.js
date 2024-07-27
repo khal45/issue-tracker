@@ -71,13 +71,13 @@ module.exports = function (app) {
       } = issueResult;
 
       res.json({
-        assigned_to,
-        status_text,
+        assigned_to: assignedTo,
+        status_text: statusText,
         open,
         _id,
-        issue_title,
-        issue_text,
-        created_by,
+        issue_title: issueTitle,
+        issue_text: issueText,
+        created_by: createdBy,
         created_on,
         updated_on,
       });
